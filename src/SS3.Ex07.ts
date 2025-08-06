@@ -1,0 +1,14 @@
+function removeDuplicates(input: string): string {
+    let newWord:string=""
+    for(let i=0;i<input.length;i++){
+        let char=input[i]
+        if(newWord.includes(char)){
+            newWord+=char
+        }
+    }
+    return newWord;
+}
+
+
+console.log(removeDuplicates("banana"));      
+console.log(removeDuplicates("hello world")); 
